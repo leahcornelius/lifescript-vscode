@@ -1,0 +1,25 @@
+{
+    "name": "lifescript",
+    "displayName": "LifeScript",
+    "description": "Adds support for lifescript highlighting, and snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lifescript",
+            "aliases": ["LifeScript", "lifescript"],
+            "extensions": [".ls",".lsa"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lifescript",
+            "scopeName": "source.lifescript",
+            "path": "./syntaxes/lifescript.tmLanguage.json"
+        }]
+    }
+}
